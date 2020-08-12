@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="wrapper-container">
     <input type="text" [(ngModel)]="text" />
-    <p *ngCustomLoop="let city of cityList; findingText: text; let i = index">
+    <p *ngCustomLoop="let city findingText: text of: cityList; let i = index">
       {{ i + 1 }}. {{ city }}
     </p>
   </div>
